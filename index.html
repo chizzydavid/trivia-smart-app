@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Trivia Smart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/stylesheet.css"/>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="0" id="home">
+
+  <header class="jumbotron " id="header">
+    <div id="dark_bg"></div>
+    <div id="background"></div>
+    <div class="header-text">
+      <h2>Trivia Smart</h2> 
+      <p class="slider">Pick a category and get started</p>
+
+    </div>
+  </header>
+
+  <section class="container" id="main-container"> 
+    <div class="row">
+
+      <form id="form" class="hide">
+        <label>Category: </label>
+        <select name="category" id="category">
+          <option value="">Select a Category</option>
+          <option value="9">General Knowledge</option>
+          <option value="10">Entertainment: Books</option>
+          <option value="11">Entertainment: Film </option>
+          <option value="12">Entertainment: Music </option>
+          <option value="14">Entertainment: Television </option>
+          <option value="15">Entertainment: Video Games </option>
+          <option value="29">Entertainment: Comics </option>
+          <option value="28">Vehicles</option>
+          <option value="27">Animals</option>
+          <option value="26">Celebrities</option>
+          <option value="25">Art</option>
+          <option value="24">Politics</option>
+          <option value="23">History</option>
+          <option value="22">Geography</option>
+          <option value="20">Mythology</option>
+
+          <option value="21">Sports</option>
+          <option value="17"> Science and Nature</option>
+          <option value="18">Science: Computers </option>
+          <option value="19">Science: Mathematics </option>
+          <option value="30">Science: Gadgets </option>
+        </select></br>
+
+
+        <label>Difficulty: </label>
+        <select name="difficulty" id="difficulty">
+          <option value="easy" id="check">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select></br>
+        <span class="error"></span>
+      </form>      
+
+      <div id="start-buttons">
+        <button type="submit" class="hide" id="startBtn">Start Trivia</button>
+        <p class="nav-item active hide" type="submit" id="trivia-btn">Trivia</p>
+        <p class="nav-item hide" type="submit" id="wrong-btn">Wrong Answers</p>
+
+      </div>
+
+
+
+      <div class="hide" id="loader">
+        <div class="sk-wave">
+          <div class="sk-rect sk-rect1"></div>
+          <div class="sk-rect sk-rect2"></div>
+          <div class="sk-rect sk-rect3"></div>
+          <div class="sk-rect sk-rect4"></div>
+          <div class="sk-rect sk-rect5"></div>
+        </div>
+        <p id="wait">Please wait..</p>
+      </div>
+
+
+      <form id="trivia-container">  </form>
+
+      <div id="result-container" class="hide"> </div>
+
+      <div id="wrong-container" class="hide"> </div>
+
+      <div id="end-buttons">
+        <button class="hide" type="submit" id="submitBtn">Submit</button>
+        <button class="hide" type="submit" id="restart">Retake Exam</button>
+      </div>
+
+    </div>
+  </section>
+ 
+
+  <footer class="text-left container-fluid">
+    <div class="row foot-text text-center">
+      <h6>&copy; 2018 Trivia Smart</h6>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+   
+</body>
+</html>
+
+
+ 
+  
